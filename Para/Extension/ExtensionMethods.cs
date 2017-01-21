@@ -15,5 +15,10 @@ namespace Para.Extension
 
             return result.ToString();
         }
+
+        public static string GetTypeName(this object o)
+        {
+            return o.GetType().FullName;
+        }
     }
 }
