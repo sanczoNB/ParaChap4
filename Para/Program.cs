@@ -20,6 +20,12 @@ namespace Para
             {
                 Console.WriteLine(para);
             }
+            Array.Sort(pi);
+            Console.WriteLine("\nPara<int> po sortowaniu:");
+            foreach (var para in pi)
+            {
+                Console.WriteLine(para);                
+            }
 
             
             //double
@@ -29,6 +35,12 @@ namespace Para
                 pd[i] = new Para<double>(random.Next(), random.Next());
             }
             Console.WriteLine("\nPara<double>:");
+            foreach (var para in pd)
+            {
+                Console.WriteLine(para);
+            }
+            Array.Sort(pd);
+            Console.WriteLine("\nPara<double> po sortowaniu:");
             foreach (var para in pd)
             {
                 Console.WriteLine(para);
@@ -53,7 +65,12 @@ namespace Para
             {
                 Console.WriteLine(para);
             }
-
+            Array.Sort(ps);
+            Console.WriteLine("\nPara<string> po sortowaniu:");
+            foreach (var para in ps)
+            {
+                Console.WriteLine(para);
+            }
             Console.ReadKey();
         }
     }
